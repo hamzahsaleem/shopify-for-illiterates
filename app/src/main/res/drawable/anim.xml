@@ -1,0 +1,8 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+        android:oneshot="false">
+    <item android:drawable="@drawable/cartanimb" android:duration="200" />
+   <item android:drawable="@drawable/cartanimc" android:duration="200" />
+<item android:drawable="@drawable/cartanimd" android:duration="200" />
+<item android:drawable="@drawable/cartanime" android:duration="2000" />
+
+</animation-list>

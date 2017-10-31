@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:background="#FFFFFF"
+
+    tools:context="com.example.hamzasaleem.hci_new.ItemDesc">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/SpeakBtn"
+
+        android:layout_marginBottom="92dp"
+        android:layout_marginLeft="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@null"
+
+
+        android:src="@drawable/mmute"
+        android:onClick="MuteBtn"
+
+        />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/MuteBtn"
+        android:src="@drawable/hhigh"
+        android:layout_alignBottom="@+id/SpeakBtn"
+        android:layout_alignEnd="@+id/imageView"
+        android:background="@null"
+
+        android:onClick="SpeakBtn"
+        android:layout_marginRight="60dp"/>
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/similar1"
+        android:onClick="Sim1Click"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/SpeakBtn"
+
+        />
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/similar2"
+        android:onClick="Sim2Click"
+        android:layout_below="@+id/MuteBtn"
+        android:layout_alignStart="@+id/MuteBtn"
+
+        />
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/similar3"
+        android:onClick="Sim3Click"
+        android:layout_alignTop="@+id/similar2"
+        android:layout_alignStart="@+id/button2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="$ 500"
+        android:textSize="30dp"
+
+        android:id="@+id/price"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView"
+        android:layout_toStartOf="@+id/plusbtn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1"
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+        android:id="@+id/ItemAmount"
+        android:layout_below="@+id/price"
+        android:layout_marginTop="5dp"
+        android:layout_alignStart="@+id/SpeakBtn" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/plusbtn"
+        android:src="@drawable/pplus"
+        android:layout_alignTop="@+id/minusbtn"
+        android:layout_toEndOf="@+id/size2"
+        android:onClick="ItemPlus"
+        android:background="@null"
+
+        />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/minusbtn"
+        android:src="@drawable/mminus"
+        android:layout_marginRight="10dp"
+        android:background="@null"
+        android:onClick="ItemNegative"
+        android:layout_below="@+id/price"
+        android:layout_alignStart="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/minusbtn"
+        android:layout_alignEnd="@+id/textView"
+        android:onClick="BlueClick"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:onClick="GreyClick"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:background="@android:color/holo_red_dark"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignStart="@+id/MuteBtn"
+        android:onClick="RedClick"
+
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:id="@+id/greytick"
+        android:src="@drawable/check"
+        android:layout_below="@id/button2"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:id="@+id/size1"
+        android:layout_alignBottom="@+id/size2"
+        android:layout_alignEnd="@+id/SpeakBtn"
+        android:onClick="SmallClick"
+
+        />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+
+        android:id="@+id/size2"
+        android:layout_above="@+id/MuteBtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="MedClick"
+
+        />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+
+        android:id="@+id/size3"
+        android:layout_alignBottom="@+id/size2"
+        android:layout_alignStart="@+id/MuteBtn"
+        android:onClick="LargeClick"
+
+        />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/buybtn"
+        android:src="@drawable/coart"
+        android:layout_alignBottom="@+id/plusbtn"
+        android:layout_alignParentEnd="true"
+        android:background="@null"
+
+        android:onClick="CartBtn"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/minusbtn"
+        android:layout_alignEnd="@+id/SpeakBtn" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:id="@+id/bluetick"
+        android:visibility="gone"
+        android:layout_below="@id/button"
+        android:src="@drawable/check"
+        android:layout_alignTop="@+id/greytick"
+        android:layout_alignStart="@+id/SpeakBtn" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:id="@+id/redtick"
+        android:src="@drawable/check"
+        android:visibility="gone"
+
+        android:layout_alignTop="@+id/greytick"
+        android:layout_below="@+id/button3"
+        android:layout_alignEnd="@+id/size3" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:id="@+id/smalltick"
+        android:visibility="gone"
+        android:src="@drawable/check"
+        android:layout_above="@+id/SpeakBtn"
+        android:layout_toStartOf="@+id/price" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:id="@+id/medtick"
+        android:src="@drawable/check"
+        android:layout_alignBottom="@+id/size2"
+        android:layout_toEndOf="@+id/price" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        android:id="@+id/largetick"
+        android:src="@drawable/check"
+        android:layout_alignBottom="@+id/size3"
+        android:layout_toEndOf="@+id/size3" />
+
+
+</RelativeLayout>
